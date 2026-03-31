@@ -14,13 +14,13 @@ Expected output:
 Additional tests:
 
 Short sleep duration:
-Input: 01:00 → 05:00
+Input: 01:00 --> 05:00
 Expected: Program calculates a short sleep period (~4 hours) and generates fewer sleep cycles.
   
 Long sleep duration:
-Input: 22:00 → 10:00
+Input: 22:00 --> 10:00
 Expected: Program calculates a long sleep period (~12 hours) and generates more sleep cycles.
   
 Crossing midnight (exception):
-Input: 23:00 → 06:00
+Input: 23:00 --> 06:00
 Expected: Program correctly handles overnight sleep by accounting for the next day and returns ~7 hours of sleep instead of -17.
