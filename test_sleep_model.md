@@ -14,7 +14,9 @@ Expected output:
 Additional tests:
 
 Short sleep duration:
+
 Input: 01:00 --> 05:00
+
 Expected: Program calculates a short sleep period (~4 hours) and generates fewer sleep cycles.
   
 Long sleep duration:
