@@ -1,5 +1,5 @@
 # personalized-sleep-cycle
-This project generates a simple personalized sleep architecture (hypnogram) graph based on a user’s sleep and wake times. It simulates typical ~90-minute sleep cycles and models changes in sleep stages (N1, N2, N3, REM) across the night. Users input their sleep schedule, and the program calculates predicted sequences and durations of sleep stages and visualizes the results as a graph. The goal of the project is to demonstrate how sleep patterns can be modeled computationally, using 3 Python functions, so that users can have a visual representation of their circadian rhythm. 
+This project generates a simple personalized sleep architecture (hypnogram) graph based on a user’s sleep and wake times. It simulates typical ~90-minute sleep cycles and models changes in sleep stages (N1, N2, N3, REM) across the night. Users input their sleep schedule, and the program calculates predicted sequences and durations of sleep stages and visualizes the results as a graph. The goal of the project is to demonstrate how sleep patterns can be modeled computationally, using 6 Python functions, so that users can have a visual representation of their circadian rhythm. 
 
 a. get_time_input(): Promotes user to enter their sleep and wake times in HH:MM format, collecting input needed to generate personalized sleep cycle.
 
