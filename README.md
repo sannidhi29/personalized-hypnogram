@@ -1,5 +1,23 @@
 # personalized-sleep-cycle
-This project generates a simple personalized sleep architecture (hypnogram) graph based on a user’s sleep and wake times. It simulates typical ~90-minute sleep cycles and models changes in sleep stages (N1, N2, N3, REM) across the night. Users input their sleep schedule, and the program calculates predicted sequences and durations of sleep stages and visualizes the results as a graph. The goal of the project is to demonstrate how sleep patterns can be modeled computationally, using 6 Python functions, so that users can have a visual representation of their circadian rhythm. 
+
+This project generates a simple personalized sleep architecture (hypnogram) graph based on a user’s sleep and wake times. It simulates typical ~90-minute sleep cycles and models changes in sleep stages (N1, N2, N3, REM) across the night. Users input their sleep schedule, and the program calculates predicted sequences and durations of sleep stages and visualizes the results as a graph. 
+
+# What is sleep architecture?
+
+Sleep architecture refers to the pattern of sleep stages that occur across a night of sleep. A typical night includes repeated sleep cycles that last about 90 minutes. Earlier in the night, deep sleep stages such as N3 are more common. Later in the night, REM sleep becomes more common.
+
+This project uses a simplified model of that pattern:
+
+- Early cycles include more N3 deep sleep.
+- Middle cycles include more N2 sleep and some N3 sleep.
+- Later cycles include more REM sleep.
+- Each simulated sleep stage block represents 15 minutes.
+
+This model is not meant to be a clinical sleep prediction tool. Instead, it is a simple computational demonstration of how sleep stages can be represented and visualized using Python.
+
+# Project features
+
+The goal of the project is to demonstrate how sleep patterns can be modeled computationally, using 6 Python functions, so that users can have a visual representation of their circadian rhythm. 
 
 a. get_time_input(): Promotes user to enter their sleep and wake times in HH:MM format, collecting input needed to generate personalized sleep cycle.
 
