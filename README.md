@@ -31,3 +31,19 @@ e. build_hypnogram_data(stages): Converts sleep stage labels into numerical valu
 
 f. plot_sleep_architecture(times, stages): Creates hypnogram showing how sleep stages change over time. Displays time on the x-axis and sleep stages on the y-axis.
 
+# Installation
+
+This project uses two Python packages:
+
+- matplotlib
+- pytest
+
+These packages are listed in the `requirements.txt` file.
+
+To install them:
+
+1. Download or clone this project from GitHub.
+2. Open the project folder on your computer.
+3. Open the terminal in that folder.
+4. Type this command: pip install -r requirements.txt
+
