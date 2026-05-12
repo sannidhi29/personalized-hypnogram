@@ -91,4 +91,5 @@ def main():
     times, values = build_hypnogram_data(stages)
     plot_sleep_architecture(times, values)
 
-main()
+if __name__ == "__main__":
+    main()
