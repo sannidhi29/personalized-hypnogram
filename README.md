@@ -47,3 +47,15 @@ To install them:
 3. Open the terminal in that folder.
 4. Type this command: pip install -r requirements.txt
 
+## Limitations
+
+This project is a simplified educational model. Real sleep architecture is influenced by many factors, including age, health, circadian rhythm, sleep quality, stress, medication, and sleep disorders. This program does not use real sleep data and should not be used for medical or clinical purposes.
+
+## References
+
+Carskadon, M. A., & Dement, W. C. (2011). Normal human sleep: An overview. In Principles and Practice of Sleep Medicine.
+
+National Institute of Neurological Disorders and Stroke. (n.d.). Brain basics: Understanding sleep. National Institutes of Health. https://www.ninds.nih.gov/health-information/public-education/brain-basics/brain-basics-understanding-sleep
+
+
+
