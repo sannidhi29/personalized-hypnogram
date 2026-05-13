@@ -66,13 +66,18 @@ def build_hypnogram_data(stages):
 def plot_sleep_architecture(times, values):
     plt.plot(times, values, marker="o")
 
-    plt.yticks([1, 2, 3, 4], ["N3", "N2", "N1", "REM"])
+    plt.yticks(
+        [1, 2, 3, 4],
+        ["N3: Deep Sleep", "N2: Light Sleep", "N1: Lightest Sleep", "REM: Dream Sleep"]
+    )
+
     plt.xlabel("Minutes After Falling Asleep")
-    plt.ylabel("Sleep Stage")
+    plt.ylabel("Predicted Sleep Stage")
     plt.title("Personalized Sleep Architecture Hypnogram")
 
     plt.gca().invert_yaxis()
     plt.grid(True)
+    plt.tight_layout()
     plt.show()
 
 def main():
@@ -89,7 +94,17 @@ def main():
     print(stages)
 
     times, values = build_hypnogram_data(stages)
+    explain_hypnogram()
     plot_sleep_architecture(times, values)
+
+def explain_hypnogram():
+    
+    print("\nHow to read the hypnogram:")
+    print("The x-axis shows minutes after falling asleep.")
+    print("The y-axis shows the predicted sleep stage.")
+    print("N3 is deep sleep, which is more common earlier in the night.")
+    print("REM is dream-associated sleep, which is more common later in the night.")
+    print("Each point on the graph represents a 15-minute block of sleep.\n")
 
 if __name__ == "__main__":
     main()
