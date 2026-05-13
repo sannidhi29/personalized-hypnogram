@@ -49,7 +49,7 @@ To install them:
      - sleep_model.py
      - test_sleep_model.py
 4. Open the terminal in the same folder as sleep_model.py
-5. Type this command to install the packages: pip install -r requirements.txt
+5. Type this command to install the packages: python -m pip install -r requirements.txt
 
 To run the project:
 
