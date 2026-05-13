@@ -57,6 +57,19 @@ To run the project:
 2. The program will ask you to enter your sleep time and wake time.
      - Use 24-hour time in HH:MM format
 
+## How to interpret the graph
+
+The graph is called a hypnogram. It shows the predicted sleep stage at different points during the night.
+
+- The x-axis shows minutes after falling asleep.
+- The y-axis shows the predicted sleep stage.
+- N1 is the lightest sleep stage.
+- N2 is light sleep.
+- N3 is deep sleep.
+- REM is dream-associated sleep.
+
+In this simplified model, deep sleep is more common earlier in the night, while REM sleep becomes more common later in the night. Each point on the graph represents a 15-minute block of sleep.
+
 ## Limitations
 
 This project is a simplified educational model. Real sleep architecture is influenced by many factors, including age, health, circadian rhythm, sleep quality, stress, medication, and sleep disorders. This program does not use real sleep data and should not be used for medical or clinical purposes.
