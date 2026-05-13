@@ -1,4 +1,4 @@
-# personalized-hypnogram
+# Personalized Sleep Cycle Graph
 
 This project generates a simple personalized sleep architecture (hypnogram) graph based on a user’s sleep and wake times. It simulates typical ~90-minute sleep cycles and models changes in sleep stages (N1, N2, N3, REM) across the night. Users input their sleep schedule, and the program calculates predicted sequences and durations of sleep stages and visualizes the results as a graph. 
 
