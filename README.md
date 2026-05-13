@@ -70,6 +70,14 @@ The graph is called a hypnogram. It shows the predicted sleep stage at different
 
 In this simplified model, deep sleep is more common earlier in the night, while REM sleep becomes more common later in the night. Each point on the graph represents a 15-minute block of sleep.
 
+## Sleep quality summary
+
+After generating the sleep stages, the program also prints a simple sleep quality summary. This summary is based on the user's total sleep duration and the simulated amount of REM sleep and N3 deep sleep.
+
+The summary is meant to help the user understand whether their sleep duration gives enough time for several full sleep cycles. In this project, 7 to 9 hours is treated as a healthy general range for many adults.
+
+This is not a medical diagnosis. It is only an educational estimate based on a simplified model.
+
 ## Limitations
 
 This project is a simplified educational model. Real sleep architecture is influenced by many factors, including age, health, circadian rhythm, sleep quality, stress, medication, and sleep disorders. This program does not use real sleep data and should not be used for medical or clinical purposes.
