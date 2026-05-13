@@ -93,6 +93,8 @@ def main():
     print("Generated sleep stages:")
     print(stages)
 
+    evaluate_sleep_quality(total_minutes, stages)
+
     times, values = build_hypnogram_data(stages)
     explain_hypnogram()
     plot_sleep_architecture(times, values)
@@ -105,6 +107,49 @@ def explain_hypnogram():
     print("N3 is deep sleep, which is more common earlier in the night.")
     print("REM is dream-associated sleep, which is more common later in the night.")
     print("Each point on the graph represents a 15-minute block of sleep.\n")
+
+def evaluate_sleep_quality(total_minutes, stages):
+    """
+    Give a simple educational sleep quality summary.
+
+    This is not a medical diagnosis. It uses sleep duration and the
+    simulated stage pattern to give the user an easy-to-understand summary.
+    """
+    total_hours = total_minutes / 60
+
+    rem_count = stages.count("REM")
+    n3_count = stages.count("N3")
+
+    rem_minutes = rem_count * 15
+    n3_minutes = n3_count * 15
+
+    print("\nSleep Quality Summary:")
+
+    if total_hours < 6:
+        print("Your sleep duration is short.")
+        print("This may not give your body enough time for full sleep cycles.")
+    elif total_hours < 7:
+        print("Your sleep duration is slightly below the common adult recommendation.")
+        print("You may get some full cycles, but more sleep may be helpful.")
+    elif total_hours <= 9:
+        print("Your sleep duration is in a healthy general range for many adults.")
+        print("Your simulated pattern includes time for both deep sleep and REM sleep.")
+    else:
+        print("Your sleep duration is longer than average for many adults.")
+        print("Long sleep is not always bad, but consistently needing very long sleep may be worth paying attention to.")
+
+    print("\nEstimated stage totals:")
+    print("REM sleep:", rem_minutes, "minutes")
+    print("Deep sleep (N3):", n3_minutes, "minutes")
+
+    if n3_minutes == 0:
+        print("Your model did not include much deep sleep, likely because the sleep duration was very short.")
+    elif rem_minutes == 0:
+        print("Your model did not include much REM sleep, likely because the sleep duration was very short.")
+    else:
+        print("This model includes both deep sleep and REM sleep, which are important parts of a complete sleep cycle.")
+
+    print("\nNote: This is a simplified educational model, not a medical sleep assessment.")
 
 if __name__ == "__main__":
     main()
