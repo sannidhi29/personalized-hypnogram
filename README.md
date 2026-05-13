@@ -31,21 +31,31 @@ e. build_hypnogram_data(stages): Converts sleep stage labels into numerical valu
 
 f. plot_sleep_architecture(times, stages): Creates hypnogram showing how sleep stages change over time. Displays time on the x-axis and sleep stages on the y-axis.
 
-## Installation
+## Installation & Running Instructions
 
 This project uses two Python packages:
 
-- matplotlib
-- pytest
+- matplotlib to create the sleep architecture graph
+- pytest to run the tests
 
 These packages are listed in the `requirements.txt` file.
 
 To install them:
 
 1. Download or clone this project from GitHub.
-2. Open the project folder on your computer.
-3. Open the terminal in that folder.
-4. Type this command: pip install -r requirements.txt
+2. Open the project folder on your computer. You should see these files:
+     - README.md
+     - requirements.txt
+     - sleep_model.py
+     - test_sleep_model.py
+4. Open the terminal in the same folder as sleep_model.py
+5. Type this command to install the packages: pip install -r requirements.txt
+
+To run the project:
+
+1. Type in terminal: python sleep_model.py
+2. The program will ask you to enter your sleep time and wake time.
+     - Use 24-hour time in HH:MM format
 
 ## Limitations
 
